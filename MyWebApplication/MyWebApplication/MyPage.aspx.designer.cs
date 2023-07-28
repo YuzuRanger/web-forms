@@ -11,7 +11,7 @@ namespace MyWebApplication
 {
 
 
-    public partial class About
+    public partial class MyPage
     {
 
         /// <summary>
@@ -24,13 +24,13 @@ namespace MyWebApplication
         protected global::System.Web.UI.WebControls.TextBox txtEvent;
 
         /// <summary>
-        /// calendarEvents control.
+        /// calendarEvent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calendarEvents;
+        protected global::System.Web.UI.WebControls.Calendar calendarEvent;
 
         /// <summary>
         /// btnEvent control.

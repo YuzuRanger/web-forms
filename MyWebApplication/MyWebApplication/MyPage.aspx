@@ -1,10 +1,8 @@
-﻿<%@ Page Title="MyPage" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MyPage.aspx.cs" Inherits="MyWebApplication.About" %>
+﻿<%@ Page Title="MyPage" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MyPage.aspx.cs" Inherits="MyWebApplication.MyPage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
         <h2 id="title"><%: Title %>.</h2>
-        <h3>Your application description page.</h3>
-        <p>Use this area to provide additional information.</p>
         
         <div class="form-group">
             <label>Event Name:</label>
@@ -12,7 +10,7 @@
         </div>
         <div class="form-group">
             <label>Event Date:</label>
-            <asp:Calendar ID="calendarEvents" runat="server" />
+            <asp:Calendar ID="calendarEvent" runat="server" />
         </div>
         <div class="form-group">
             <asp:Button ID="btnEvent" runat="server" CssClass="btn btn-primary btn-large" Text="Add Event" OnClick="btnEvent_Click" />
