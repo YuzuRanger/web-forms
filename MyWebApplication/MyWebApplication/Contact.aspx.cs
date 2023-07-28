@@ -11,7 +11,8 @@ namespace MyWebApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // divMessage.Visible = false;
+            divMessage.Attributes.Add("style", "color: blue;");
         }
     }
 }
