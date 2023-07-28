@@ -19,6 +19,7 @@
         <div>
             <label>Name</label>
             <asp:TextBox ID="txtName" CssClass="text-box" runat="server" />
+            <asp:RequiredFieldValidator runat="server" ID="rfvName" ControlToValidate="txtName" ErrorMessage="*" />
         </div>
         <div>
             <label>Email</label>
@@ -31,11 +32,13 @@
         <div>
             <label>Your favorite color:</label>
             <asp:DropDownList ID="ddlColor" runat="server">
+                <asp:ListItem Text="Please choose a color." Value="" />
                 <asp:ListItem Text="Blue" Value="Blue" />
                 <asp:ListItem Text="Red" Value="Blue" />
                 <asp:ListItem Text="Green" Value="Blue" />
                 <asp:ListItem Text="Yellow" Value="Blue" />
             </asp:DropDownList>
+            <asp:RequiredFieldValidator runat="server" ID="rfvColor" ControlToValidate="ddlColor" ErrorMessage="Color Required" />
         </div>
         <div>
             <asp:Button ID="btnSubmit" runat="server" Text="Submit Info" OnClick="btnSubmit_Click" />
