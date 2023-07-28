@@ -9,6 +9,9 @@
             <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
         </section>
 
+        <asp:Button ID="btnRedirect" runat="server" OnClick="btnRedirect_Click" Text="Redirect To Contact Page" />
+        <br />
+        <a href="Site.Master">Site.Master</a>
         <div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
                 <h2 id="gettingStartedTitle">Getting started</h2>
