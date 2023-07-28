@@ -16,5 +16,33 @@
             <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
             <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
         </address>
+        <div>
+            <label>Name</label>
+            <asp:TextBox ID="txtName" CssClass="text-box" runat="server" />
+        </div>
+        <div>
+            <label>Email</label>
+            <asp:TextBox ID="txtEmail" runat="server" />
+        </div>
+        <div>
+            <label>Age</label>
+            <asp:TextBox ID="txtAge" runat="server" />
+        </div>
+        <div>
+            <label>Your favorite color:</label>
+            <asp:DropDownList ID="ddlColor" runat="server">
+                <asp:ListItem Text="Blue" Value="Blue" />
+                <asp:ListItem Text="Red" Value="Blue" />
+                <asp:ListItem Text="Green" Value="Blue" />
+                <asp:ListItem Text="Yellow" Value="Blue" />
+            </asp:DropDownList>
+        </div>
+        <div>
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit Info" OnClick="btnSubmit_Click" />
+        </div>
+        <div class="message">
+           <asp:Literal ID="ltMessage" runat="server"/>
+        </div>
+
     </main>
 </asp:Content>
